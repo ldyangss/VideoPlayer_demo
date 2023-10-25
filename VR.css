@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cute+Font&family=Edu+SA+Beginner:wght@600&family=Noto+Sans+Chorasmian&family=Rubik+Iso&display=swap');
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #dff4fe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.vrtitle {
+    display: flex;
+    justify-content: center;
+    color: #7f9098;
+    font-size: 3rem;
+    font-family: Changa;
+}
+
+.arm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    margin: 1rem 0 3rem 0;
+}
+
+.arm img {
+    width: 80vw;
+    height: 50%;
+}
+h1, p {
+    font-family: Changa;
+    color: #7f9098;
+}
+
+.btn, #ap2btn {
+    margin: 10px;
+    padding: 10px;
+    background-color: #b9d9fb;
+    color: white;
+    font-weight: 900;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.wotw {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 3rem 0 3rem 0;
+}
+
+.wotw img {
+    width: 50%;
+}
+
+.textpart {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.5px;
+}
+p {
+    font-size: 20px;
+}
+
+.loves {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 3rem 0 3rem 0;
+}
+.loves img {
+    width: 50%;
+}
+
+.video_container{
+    width: 80vw;
+    height: 45vw;
+    z-index: 1000;
+    top: 5%;
+    position: fixed;
+    visibility: hidden;
+}
+
+.controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.time {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+#progress {
+    width: 100%;
+    display: inline;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.conbtn{
+    display: flex;
+    gap: 20px;
+}
+
+#playPause, #fullscreen {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1rem;
+    background-color: #f6dce6;
+    border-color: #c8abc2;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#volume {
+    cursor: pointer;
+}
+
+#close {
+    background-color: #f6dce6;
+    border-color: #c8abc2;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    cursor: pointer
+}
+
+.ap2container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.ap2container video {
+    position: relative;
+    max-width: 80vw;
+}
+
+#ap2close {
+    background-color: #f6dce6;
+    border-color: #c8abc2;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    cursor: pointer
+}

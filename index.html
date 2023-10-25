@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Reality Project</title>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <script src="https://kit.fontawesome.com/3823a31ea0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="VR.css">
+    <script src="VR.js"></script>
+</head>
+<body>
+    <h1 class="vrtitle">Virtual Reality</h1>
+    <div class="arm">
+        <img src="Image/AVENUE ROAD MEMORIES.png">
+        <h1>Avenue Road Memories</h1>
+        <p>In 'Avenue Road Memories', I explored the heart of Leytonstone's Avenue Road Estate through a Virtual Reality Experience. This project is a synergy between E17 Films and the innovative minds of our University College London MA Immersive Storytelling team. Captured on the estate itself, the film delves deep into residents' sentiments in response to the London Borough of Waltham Forest's announcement of an impending urban metamorphosis. It stands as a testament to the community's perspective as they grapple with the imminent transformation of their home and shared legacy.</p>
+        <button class="btn" data-videosphere-id="videosphere-gpvideo">Watch Now</button>
+    </div>
+    
+    <div class="wotw">
+        <img class="img" src="Image/WordontheWater.png">
+        <div class="textpart">
+            <h1 class="title">Word on the Water</h1> 
+            <p class="desc">In my exploration of unique literary spaces, I delved into the fascinating world of “Word on the Water”, a canal-based bookstore steered by the passionate Mr Screech and Mr Privett. This floating bookstore, with its novel position on the waterways, has resonated digitally, gaining a reputation as an 'Internet sensation' within bibliophile circles. Amidst the rise of e-books and the challenges of COVID-19, this quaint shop remains a beacon of resilience and cultural significance. As articulated by Mr Screech, “Books have been considered on the verge of obsolete, and so have canals... But these are things people always liked. The canals survived because of that, and so will books and bookstores.”</p>
+            <button class="btn" data-videosphere-id="videosphere-ap1video">Watch Now</button>
+        </div>    
+    </div>
+    
+    <div class="loves">
+        <div class="textpart">
+            <h1>Loves of Parents</h1>
+            <p>In “The 'Love' of Parents”, I crafted an immersive journey into a discipline school's stark reality through a teenager's perspective, sent there after a family conflict. The title's inverted commas highlight the darker sides of parental love. Leveraging diary entries, the story unravels both primary and subsidiary narratives. Interspersed with 'punishments'—symbolized as shocks during exploration—the narrative jolts the audience into recognizing that this isn't a dystopian fiction akin to '1984' but reflects genuine, ongoing stories. This project prompts reflection on existing punitive practices and the often entrenched power imbalances in familial bonds.</p>
+            <button id="ap2btn">Watch Now</button>
+        </div>
+        <img src="Image/lovesofparents.png">
+    </div>
+
+<!-- video -->
+    <div class="video_container">
+        <a-scene embedded>
+            <a-assets>
+                <video id="gpvideo" src="Video/demo1.mp4" preload="auto" crossorigin="anonymous"></video>
+                <video id="ap1video" src="Video/demo2.mp4" preload="auto" crossorigin="anonymous"></video>
+            </a-assets>
+
+            <a-videosphere id="videosphere-gpvideo" src="#gpvideo" rotation="0 -90 0"></a-videosphere>
+            <a-videosphere id="videosphere-ap1video" src="#ap1video" rotation="0 -90 0"></a-videosphere>
+        </a-scene>
+
+        <div class="controls">
+            <div class="time">
+                <span id="currentTime">00:00</span>
+                <span id="totalTime">00:00</span>
+                <input type="range" id="progress" min="0" max="100" value="0">
+            </div>
+            <div class="conbtn">
+                <button id="playPause"><i class="fa-regular fa-circle-play"></i></button>
+                <div class="volume-container">
+                    <i id="volume-icon" class="fas fa-volume-up"></i>
+                    <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5">
+                </div>
+                <button id="fullscreen"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+        <button id="close"><i class="fa-regular fa-circle-xmark"></i></button>
+    </div>
+
+    <div class="ap2container">
+        <video src="Video/Love of Parents.mp4" controls></video>
+        <button id="ap2close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+</body>
+</html>
