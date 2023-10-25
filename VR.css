@@ -12,12 +12,23 @@ body {
 
 }
 
-.vrtitle {
+.main_title {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.vrtitle {
+    display: block;
     color: #7f9098;
     font-size: 3rem;
     font-family: Changa;
+    margin-right: 10px; 
+}
+.main_title a {
+    font-size: 2rem;
+    color: #7f9098;
+    display: flex;
+    align-items: center;
 }
 
 .arm {
